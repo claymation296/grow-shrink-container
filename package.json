@@ -1,0 +1,22 @@
+{
+  "name": "@longlost/grow-shrink-container",
+  "version": "1.0.0",
+  "description": "This container element performs a Material design compliant grow and shrink effect.",
+  "main": "grow-shrink-container.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/longlost/grow-shrink-container.git"
+  },
+  "author": "Longlost Dev longlostdev@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/longlost/grow-shrink-container/issues"
+  },
+  "homepage": "https://github.com/longlost/grow-shrink-container#readme",
+  "dependencies": {
+    "@longlost/app-core": "^2.5.0"
+  }
+}
