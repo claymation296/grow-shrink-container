@@ -1,0 +1,76 @@
+
+<style include="app-shared-styles">
+
+  :host {
+    display:          none;
+    position:         absolute;
+    top:              100%;
+    left:             0px;
+    background-color: transparent; /* Do NOT style directly, use --background-color. */
+    z-index:          10;    
+
+    --background-color: var(--app-background-color);
+    --border-radius:    3px;
+  }
+
+  .animators {
+    transform-origin: center top;
+  }
+
+  .x-wrapper {
+    transition: transform 0.2s var(--app-custom-ease, ease-out);
+    transform:  translateY(0px) scale(0, 0.1);
+
+    background-color: transparent;    
+  }
+
+  .y-wrapper {
+    transition: transform 0.3s var(--app-custom-ease, ease-out);
+    transform:  translateY(0px) scale(1, 0.1);
+
+    background-color: var(--background-color);
+  }
+
+  .border-radius {
+    border-radius: var(--border-radius);
+  }
+
+  .delay {
+    transition-delay: 0.05s;
+  }
+
+  .container {
+    width:      100%;
+    transition: transform 0.2s var(--app-custom-ease, ease-out), 
+                opacity 0.1s ease-in;
+    transform:  translateY(8px) scale(1, 1);
+    opacity:    0;
+  }
+
+  .delayed-transition {    
+    transition: transform 0.3s var(--app-custom-ease, ease-out) 0.2s, 
+                opacity 0.1s ease-in 0.3s;
+  }
+
+  .open {
+    transform: translateY(0px) scale(1, 1);
+    opacity:   1;
+  }
+
+</style>
+
+
+<div id="xWrapper" 
+     class="animators x-wrapper">
+
+  <div id="yWrapper" 
+       class="animators y-wrapper shared-card border-radius">
+
+    <div id="container" 
+         class="container shared-border-radius-mask border-radius">      
+      <slot></slot>
+    </div>
+
+  </div>
+
+</div>
