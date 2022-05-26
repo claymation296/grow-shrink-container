@@ -14,7 +14,7 @@
 import {AppElement, html} from '@longlost/app-core/app-element.js';
 import {schedule, wait}   from '@longlost/app-core/utils.js';
 import htmlString         from './grow-shrink-container.html';
-import '@longlost/app-core/app-shared-styles.js';
+import '@longlost/app-core/app-shared-styles.css';
 
 
 class GrowShrinkContainer extends AppElement {
