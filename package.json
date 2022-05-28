@@ -1,6 +1,6 @@
 {
   "name": "@longlost/grow-shrink-container",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This container element performs a Material design compliant grow and shrink effect.",
   "main": "grow-shrink-container.js",
   "scripts": {
@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/longlost/grow-shrink-container#readme",
   "dependencies": {
-    "@longlost/app-core": "^8.0.0"
+    "@longlost/app-core": "^9.0.1"
   }
 }
