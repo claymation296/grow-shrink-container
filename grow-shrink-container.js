@@ -11,9 +11,9 @@
   **/
 
 
-import {AppElement, html} from '@longlost/app-core/app-element.js';
-import {schedule, wait}   from '@longlost/app-core/utils.js';
-import htmlString         from './grow-shrink-container.html';
+import {AppElement}     from '@longlost/app-core/app-element.js';
+import {schedule, wait} from '@longlost/app-core/utils.js';
+import template         from './grow-shrink-container.html';
 import '@longlost/app-core/app-shared-styles.css';
 
 
@@ -22,7 +22,7 @@ class GrowShrinkContainer extends AppElement {
   static get is() { return 'grow-shrink-container'; }
 
   static get template() {
-    return html([htmlString]);
+    return template;
   }
 
 
